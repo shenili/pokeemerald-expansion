@@ -588,6 +588,24 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
         //.teraShard = ITEM_FAIRY_TERA_SHARD,
         //.arceusForm = SPECIES_ARCEUS_FAIRY,
     },
+    [TYPE_WATER_1] =
+    {
+        .name = _("Water 1"),
+        .generic = _("a WATER 1 move"),
+        .palette = 14,
+    },
+    [TYPE_WATER_2] =
+    {
+        .name = _("Water"),
+        .generic = _("a WATER 2 move"),
+        .palette = 14,
+    },
+    [TYPE_WATER_3] =
+    {
+        .name = _("Water"),
+        .generic = _("a WATER 3 move"),
+        .palette = 14,
+    },
     /*
     [TYPE_STELLAR] =
     {
