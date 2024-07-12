@@ -97,7 +97,10 @@ LilycoveCity_EventScript_ExpertM1::
 	end
 
 LilycoveCity_EventScript_ExpertF::
+	setvar VAR_0x8000, MUGSHOT_TAP
+	callnative DrawMugshot
 	msgbox LilycoveCity_Text_SixtyYearsAgoHusbandProposed, MSGBOX_SIGN
+	callnative ClearMugshot
 	end
 
 LilycoveCity_EventScript_ExpertM2::
