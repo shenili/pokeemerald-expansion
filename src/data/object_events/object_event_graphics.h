@@ -373,3 +373,6 @@ const u32 gObjectEventPic_Lugia[] = INCBIN_U32("graphics/object_events/pics/poke
 const u16 gObjectEventPal_Lugia[] = INCBIN_U16("graphics/object_events/palettes/lugia.gbapal");
 const u32 gObjectEventPic_HoOh[] = INCBIN_U32("graphics/object_events/pics/pokemon/ho_oh.4bpp");
 const u16 gObjectEventPal_HoOh[] = INCBIN_U16("graphics/object_events/palettes/ho_oh.gbapal");
+const u32 gObjectEventPic_RebbieNormalRunning[] = INCBIN_U32("graphics/object_events/pics/people/rebbie/rebbie_ow.4bpp", "graphics/object_events/pics/people/rebbie/rebbie_ow_run.4bpp");
+const u32 gObjectEventPic_RebbieNormalNaruto[] = INCBIN_U32("graphics/object_events/pics/people/rebbie/rebbie_ow.4bpp", "graphics/object_events/pics/people/rebbie/rebbie_ow_run_naruto.4bpp");
+const u16 gObjectEventPal_Rebbie[] = INCBIN_U16("graphics/object_events/pics/people/rebbie.gbapal");
