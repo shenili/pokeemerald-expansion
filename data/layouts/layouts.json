@@ -4420,6 +4420,26 @@
       "secondary_tileset": "gTileset_BrendansMaysHouse",
       "border_filepath": "data/layouts/HistoricCentre_RebbiesHouse/border.bin",
       "blockdata_filepath": "data/layouts/HistoricCentre_RebbiesHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_HISTORIC_CENTRE_SEPHS_ROOM",
+      "name": "HistoricCentre_SephsRoom_Layout",
+      "width": 7,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/HistoricCentre_SephsRoom/border.bin",
+      "blockdata_filepath": "data/layouts/HistoricCentre_SephsRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_MAP1",
+      "name": "NewMap1_Layout",
+      "width": 7,
+      "height": 7,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/NewMap1/border.bin",
+      "blockdata_filepath": "data/layouts/NewMap1/map.bin"
     }
   ]
 }

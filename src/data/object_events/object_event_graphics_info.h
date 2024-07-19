@@ -32,7 +32,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RebbieNormal = {
     .oam = &gObjectEventBaseOam_16x32,
     .subspriteTables = sOamTables_16x32,
     .anims = sAnimTable_BrendanMayNormal,
-    .images = sPicTable_BrendanNormal,
+    .images = sPicTable_RebbieNormal,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
@@ -51,7 +51,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RebbieNaruto = {
     .oam = &gObjectEventBaseOam_16x32,
     .subspriteTables = sOamTables_16x32,
     .anims = sAnimTable_BrendanMayNormal,
-    .images = sPicTable_BrendanNormal,
+    .images = sPicTable_RebbieNaruto,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
