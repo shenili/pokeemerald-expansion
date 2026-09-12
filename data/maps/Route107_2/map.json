@@ -1,7 +1,7 @@
 {
-  "id": "MAP_ROUTE107",
-  "name": "Route107",
-  "layout": "LAYOUT_ROUTE107",
+  "id": "MAP_ROUTE107_2",
+  "name": "Route107_2",
+  "layout": "LAYOUT_ROUTE107_2",
   "music": "MUS_ROUTE104",
   "region_map_section": "MAPSEC_ROUTE_107",
   "requires_flash": false,
@@ -14,19 +14,14 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_DEWFORD_TOWN",
-      "offset": 0,
-      "direction": "left"
+      "map": "MAP_ROUTE107",
+      "offset": 56,
+      "direction": "up"
     },
     {
-      "map": "MAP_ROUTE108",
-      "offset": 0,
-      "direction": "right"
-    },
-    {
-      "map": "MAP_ROUTE107_2",
-      "offset": -56,
-      "direction": "down"
+      "map": "MAP_ROUTE106_2",
+      "offset": -8,
+      "direction": "up"
     }
   ],
   "object_events": [
