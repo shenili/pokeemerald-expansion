@@ -9339,11 +9339,33 @@
       "id": "LAYOUT_ROUTE106_2",
       "name": "Route106_2_Layout",
       "width": 20,
-      "height": 35,
+      "height": 30,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Dewford",
       "border_filepath": "data/layouts/Route106_2/border.bin",
       "blockdata_filepath": "data/layouts/Route106_2/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_DEWFORD_TOWN_MCS_HOUSE_1",
+      "name": "DewfordTown_MCs_House_1_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/DewfordTown_MCs_House_1/border.bin",
+      "blockdata_filepath": "data/layouts/DewfordTown_MCs_House_1/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_DEWFORD_TOWN_MCS_HOUSE_2",
+      "name": "DewfordTown_MCs_House_2_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/DewfordTown_MCs_House_2/border.bin",
+      "blockdata_filepath": "data/layouts/DewfordTown_MCs_House_2/map.bin",
       "layout_version": "emerald"
     }
   ]

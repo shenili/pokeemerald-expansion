@@ -1742,3 +1742,7 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/Route107_2/scripts.inc"
 
 	.include "data/maps/Route106_2/scripts.inc"
+
+	.include "data/maps/DewfordTown_MCs_House_1/scripts.inc"
+
+	.include "data/maps/DewfordTown_MCs_House_2/scripts.inc"

@@ -1,0 +1,2 @@
+DewfordTown_MCs_House_2_MapScripts::
+	.byte 0

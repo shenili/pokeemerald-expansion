@@ -20,7 +20,7 @@
     },
     {
       "map": "MAP_ROUTE107",
-      "offset": 0,
+      "offset": -5,
       "direction": "right"
     }
   ],
@@ -71,7 +71,7 @@
       "x": 22,
       "y": 8,
       "elevation": 1,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
