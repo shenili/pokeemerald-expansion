@@ -1746,3 +1746,13 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/DewfordTown_MCs_House_1/scripts.inc"
 
 	.include "data/maps/DewfordTown_MCs_House_2/scripts.inc"
+
+	.include "data/maps/DewfordTown_Mart/scripts.inc"
+
+	.include "data/maps/DewfordTown_MartHouse/scripts.inc"
+
+	.include "data/maps/DewfordTown_MCs_House_3/scripts.inc"
+
+	.include "data/maps/DewfordMirror/scripts.inc"
+
+	.include "data/maps/GraniteThicket/scripts.inc"

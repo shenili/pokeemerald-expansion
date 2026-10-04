@@ -9367,6 +9367,61 @@
       "border_filepath": "data/layouts/DewfordTown_MCs_House_2/border.bin",
       "blockdata_filepath": "data/layouts/DewfordTown_MCs_House_2/map.bin",
       "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_DEWFORD_TOWN_MART",
+      "name": "DewfordTown_Mart_Layout",
+      "width": 9,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/DewfordTown_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/DewfordTown_Mart/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_DEWFORD_TOWN_MART_HOUSE",
+      "name": "DewfordTown_MartHouse_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/DewfordTown_MartHouse/border.bin",
+      "blockdata_filepath": "data/layouts/DewfordTown_MartHouse/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_DEWFORD_TOWN_MCS_HOUSE_3",
+      "name": "DewfordTown_MCs_House_3_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/DewfordTown_MCs_House_3/border.bin",
+      "blockdata_filepath": "data/layouts/DewfordTown_MCs_House_3/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_DEWFORD_MIRROR",
+      "name": "DewfordMirror_Layout",
+      "width": 30,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_EverGrande",
+      "border_filepath": "data/layouts/DewfordMirror/border.bin",
+      "blockdata_filepath": "data/layouts/DewfordMirror/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_GRANITE_THICKET",
+      "name": "GraniteThicket_Layout",
+      "width": 48,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/GraniteThicket/border.bin",
+      "blockdata_filepath": "data/layouts/GraniteThicket/map.bin",
+      "layout_version": "emerald"
     }
   ]
 }

@@ -348,7 +348,7 @@
 
 // Interface settings
 #define B_FAST_INTRO_PKMN_TEXT              TRUE       // If set to TRUE, battle intro text prints at the same time as the animation of Pokémon, as opposing to waiting for the animation to end.
-#define B_FAST_INTRO_NO_SLIDE               FALSE      // If set to TRUE, the slide animation that happens at the beginning of battles is skipped.
+#define B_FAST_INTRO_NO_SLIDE               TRUE      // If set to TRUE, the slide animation that happens at the beginning of battles is skipped.
 #define B_FAST_HP_DRAIN                     TRUE       // If set to TRUE, HP bars will move faster.
 #define B_FAST_EXP_GROW                     TRUE       // If set to TRUE, EXP bars will move faster.
 #define B_SHOW_TARGETS                      TRUE       // If set to TRUE, all available targets will be shown before selecting a move in Double Battles.
@@ -369,7 +369,7 @@
 #define B_SEMI_INVULNERABLE_CATCH       GEN_LATEST // In Gen4+, you cannot throw a ball against a Pokémon that is in a semi-invulnerable state (Dig/Fly/etc).
 #define B_CATCHING_CHARM_BOOST          100        // % increase in critical capture odds if the player has the Catching Charm.
 #define B_INCAPACITATED_CATCH_BONUS     GEN_LATEST // In Gen5+, the catch rate bonus for a sleeping or frozen Pokémon is 2.5x instead of 2x.
-#define B_LOW_LEVEL_CATCH_BONUS         GEN_LATEST // In Gen9+, a bonus is added to the catch rate when catching a Pokémon lower than level 13. In Gen8, the bonus is applied to Pokémon lower than level 20.
+#define B_LOW_LEVEL_CATCH_BONUS         GEN_8 // In Gen9+, a bonus is added to the catch rate when catching a Pokémon lower than level 13. In Gen8, the bonus is applied to Pokémon lower than level 20.
 #define B_MISSING_BADGE_CATCH_MALUS     GEN_LATEST // In Gen9+, a penalty is added to the catch rate when trying to catch a Pokémon 5 levels above the current obedience level, based on the number of Badges obtained.
 #define B_CRITICAL_CAPTURE              TRUE       // If set to TRUE, Critical Captures will be enabled.
 #define B_CRITICAL_CAPTURE_LOCAL_DEX    TRUE       // If set to FALSE, the Critical Capture chance is based off of the National Pokédex, estimated by enabled generations.
@@ -386,7 +386,7 @@
 // Other settings
 #define B_MULTI_BATTLE_WHITEOUT         GEN_LATEST // In Gen4+, Multi Battles end when the player as well as their partner don't have any Pokémon left.
 #define B_EVOLUTION_AFTER_WHITEOUT      GEN_LATEST // In Gen6+, Pokémon that qualify for evolution after battle will evolve even if the player loses.
-#define B_AFFECTION_MECHANICS           TRUE       // In Gen6+, there's a stat called affection that can trigger different effects in battle. From LGPE onwards, these effects use friendship instead.
+#define B_AFFECTION_MECHANICS           FALSE       // In Gen6+, there's a stat called affection that can trigger different effects in battle. From LGPE onwards, these effects use friendship instead.
 #define B_TRAINER_CLASS_POKE_BALLS      GEN_LATEST // In Gen7+, Trainers will use certain kinds of Poké Balls depending on their Trainer class.
 #define B_TRAINER_MON_RANDOM_ABILITY    0          // If this is set to 0, trainers mons with no set ability only use the first ability of a mon. If set to 1 it will roll a random non-hidden ability. If set to 2, it will roll any ability (including hidden ability) with equal chance
 #define B_OBEDIENCE_MECHANICS           GEN_LATEST // In PLA onwards (GEN_8 here), obedience restrictions also apply to non-outsider Pokémon, albeit based on their met level rather than their current level.
@@ -394,8 +394,8 @@
 #define B_TOXIC_REVERSAL                GEN_LATEST // In Gen5+, bad poison will change to regular poison at the end of battles.
 #define B_TRY_CATCH_TRAINER_BALL        GEN_LATEST // In Gen4+, trying to catch a Trainer's Pokémon no longers consume the Poké Ball.
 #define B_SLEEP_CLAUSE                  FALSE      // Enables Sleep Clause all the time in every case, overriding B_FLAG_SLEEP_CLAUSE. Use that for modularity.
-#define B_PARTNER_MONS_MARKED_SEEN      FALSE      // If set to TRUE, if your Double Battle partner sends out a Pokémon you haven't encountered yet, it will be marked as SEEN in your Pokédex.
-#define B_MULTI_HALF_TEAMS              FALSE      // If TRUE, trainers will be capped at 3 Pokémon each when there are 2 trainers on one side in a battle. If FALSE, per-battle capping may still be set using `Multi Party: Half` in `trainers.party`
+#define B_PARTNER_MONS_MARKED_SEEN      TRUE      // If set to TRUE, if your Double Battle partner sends out a Pokémon you haven't encountered yet, it will be marked as SEEN in your Pokédex.
+#define B_MULTI_HALF_TEAMS              TRUE      // If TRUE, trainers will be capped at 3 Pokémon each when there are 2 trainers on one side in a battle. If FALSE, per-battle capping may still be set using `Multi Party: Half` in `trainers.party`
 #define B_TERA_ORB_ALWAYS_CHARGED       FALSE      // If TRUE, causes the Tera Orb to always be charged all the time in every case, overriding B_FLAG_TERA_ORB_CHARGED. Use that for modularity.
 
 #define NUM_BEEPS_GEN_LATEST            4                    // Loops 4 times
@@ -442,7 +442,7 @@
 #define B_ENEMY_MON_SHADOW_STYLE        GEN_LATEST // In Gen4+, all opposing Pokémon will have a shadow drawn beneath them.
 
 //  Battle UI settings
-#define B_MOVE_REARRANGEMENT_IN_BATTLE  GEN_LATEST  //  In Gen4+, move slots can no longer be rearranged in battle.
+#define B_MOVE_REARRANGEMENT_IN_BATTLE  GEN_3  //  In Gen4+, move slots can no longer be rearranged in battle.
 
 #define B_POOL_SETTING_CONSISTENT_RNG       FALSE    // If set to TRUE, the same Trainer will always generate the same pool on the same save file.
 #define B_POOL_SETTING_USE_FIXED_SEED       FALSE    // If set to TRUE, RNG will use the fixed seed defined in B_POOL_SETTING_FIXED_SEED.

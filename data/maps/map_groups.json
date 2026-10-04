@@ -159,7 +159,10 @@
     "DewfordTown_Hall",
     "DewfordTown_House2",
     "DewfordTown_MCs_House_1",
-    "DewfordTown_MCs_House_2"
+    "DewfordTown_MCs_House_2",
+    "DewfordTown_Mart",
+    "DewfordTown_MartHouse",
+    "DewfordTown_MCs_House_3"
   ],
   "gMapGroup_IndoorLavaridge": [
     "LavaridgeTown_HerbShop",
@@ -474,7 +477,9 @@
     "TerraCave_Entrance",
     "TerraCave_End",
     "AlteringCave",
-    "MeteorFalls_StevensCave"
+    "MeteorFalls_StevensCave",
+    "DewfordMirror",
+    "GraniteThicket"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

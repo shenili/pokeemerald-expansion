@@ -122,7 +122,22 @@
       "flag": "0"
     }
   ],
-  "warp_events": [],
+  "warp_events": [
+    {
+      "x": 8,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_DEWFORD_MIRROR",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_DEWFORD_MIRROR",
+      "dest_warp_id": "1"
+    }
+  ],
   "coord_events": [],
   "bg_events": [],
   "region": "REGION_HOENN"

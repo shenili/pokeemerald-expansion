@@ -53,7 +53,7 @@ LittlerootTown_MaysHouse_2F_EventScript_WallClock::
 	end
 
 PlayersHouse_2F_EventScript_WallClock::
-	goto_if_set FLAG_SET_WALL_CLOCK, PlayersHouse_2F_EventScript_CheckWallClock
+	goto PlayersHouse_2F_EventScript_CheckWallClock
 	msgbox PlayersHouse_2F_Text_ClockIsStopped, MSGBOX_DEFAULT
 	call PlayersHouse_2F_EventScript_SetWallClock
 	delay 30
