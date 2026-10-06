@@ -147,7 +147,8 @@
     "OldaleTown_House2",
     "OldaleTown_PokemonCenter_1F",
     "OldaleTown_PokemonCenter_2F",
-    "OldaleTown_Mart"
+    "OldaleTown_Mart",
+    "EverGrandeCity_House1"
   ],
   "gMapGroup_IndoorDewford": [
     "DewfordTown_House1",
@@ -334,7 +335,8 @@
     "EverGrandeCity_HallOfFame",
     "EverGrandeCity_PokemonCenter_1F",
     "EverGrandeCity_PokemonCenter_2F",
-    "EverGrandeCity_PokemonLeague_2F"
+    "EverGrandeCity_PokemonLeague_2F",
+    "EverGrandeCity_House2"
   ],
   "gMapGroup_IndoorRoute104": [
     "Route104_MrBrineysHouse",

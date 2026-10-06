@@ -9323,6 +9323,28 @@
       "border_height": 2,
       "border_width": 2,
       "layout_version": "frlg"
+    },
+    {
+      "id": "LAYOUT_EVER_GRANDE_CITY_HOUSE1",
+      "name": "EverGrandeCity_House1_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/EverGrandeCity_House1/border.bin",
+      "blockdata_filepath": "data/layouts/EverGrandeCity_House1/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_EVER_GRANDE_CITY_HOUSE2",
+      "name": "EverGrandeCity_House2_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/EverGrandeCity_House2/border.bin",
+      "blockdata_filepath": "data/layouts/EverGrandeCity_House2/map.bin",
+      "layout_version": "emerald"
     }
   ]
 }

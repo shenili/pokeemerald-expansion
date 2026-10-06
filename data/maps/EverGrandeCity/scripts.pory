@@ -1,0 +1,175 @@
+raw `
+EverGrandeCity_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, EverGrandeCity_OnTransition
+	.byte 0
+
+EverGrandeCity_OnTransition:
+	call_if_set FLAG_SYS_WEATHER_CTRL, Common_EventScript_SetAbnormalWeather
+	end
+
+EverGrandeCity_EventScript_VictoryRoadSign::
+	msgbox EverGrandeCity_Text_EnteringVictoryRoad, MSGBOX_SIGN
+	end
+
+EverGrandeCity_EventScript_CitySign::
+	msgbox EverGrandeCity_Text_CitySign, MSGBOX_SIGN
+	end
+
+EverGrandeCity_EventScript_PokemonLeagueSign::
+	msgbox EverGrandeCity_Text_EnteringPokemonLeague, MSGBOX_SIGN
+	end
+
+EverGrandeCity_EventScript_SetVisitedEverGrande::
+	setflag FLAG_VISITED_EVER_GRANDE_CITY
+	setvar VAR_TEMP_1, 1
+	end
+
+EverGrandeCity_Text_EnteringVictoryRoad:
+	.string "ENTERING VICTORY ROAD$"
+
+EverGrandeCity_Text_EnteringPokemonLeague:
+	.string "ENTERING POKéMON LEAGUE\n"
+	.string "CENTER GATE$"
+
+EverGrandeCity_Text_CitySign:
+	.string "EVER GRANDE CITY\p"
+	.string "“The paradise of flowers, the sea,\n"
+	.string "and POKéMON.”$"
+
+`
+
+script EverGrandeCity_EventScript_PhoebeWalk{
+	lock
+	playse(SE_EXIT)
+	delay_8
+	setvar(VAR_PHOEBE_WALK, 1)
+	release
+	end}
+
+script EverGrandeCity_EventScript_Phoebe{
+	lock
+	faceplayer
+	if(!flag(FLAG_PHOEBE_TALK)){
+	msgbox("\.\.\.
+
+			Ahhh\.
+			
+			Nothing beats fresh mountain air, haha!
+			
+			Hello, my name's PHOEBE!
+
+			I felt a strong connection to this place,
+			so I came to visit. What's your name?
+			
+			\.
+			
+			I see,
+			nice to meet you, {PLAYER}!")}
+	switch(var(VAR_LITTLEROOT_RIVAL_STATE)){
+		case 1:
+			if(flag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)){
+				msgbox("Cute bag!
+				
+						Although it isn't really your style.")
+			}
+			else{
+				msgbox("Oh, you're looking for something?
+						A bag? Hm\.
+				
+						I think it must be behind something.")}
+			
+	}
+	}
+
+script EverGrandeCity_EventScript_BirchsBag{
+	lock
+	msgbox("It's DAD's bag.
+			There's a POK\eDEX, RUNNING SHOES
+			and a letter inside:
+	
+			\qoDear {PLAYER},
+
+			Sorry for leaving so soon!
+			Thank you for the offer to help,
+			can't wait to meet you on your
+			POK\eDEX journey!
+
+			Good luck with GYMs,
+			don't forget to rest and
+			take care of yourself!
+
+			I got you a little buddy
+			to get you started! 
+
+			DAD
+			\qc")
+	message("It's DAD's POK\eMON!\n
+			 Which one is it?")
+	dynmultipush(EverGrandeCity_Text_ChooseTreecko, SPECIES_TREECKO)
+	dynmultipush(EverGrandeCity_Text_ChooseTorchic, SPECIES_TORCHIC)
+	dynmultipush(EverGrandeCity_Text_ChooseMudkip, SPECIES_MUDKIP)
+	dynmultistack(25, 5, TRUE, 3, TRUE, 0, DYN_MULTICHOICE_CB_SHOW_PKMN)
+	closemessage
+	switch(var(VAR_RESULT)){
+		case SPECIES_TREECKO:
+			EverGrandeCity_EventScript_ChooseTreecko
+		case SPECIES_TORCHIC:
+			EverGrandeCity_EventScript_ChooseTorchic
+		case SPECIES_MUDKIP:
+			EverGrandeCity_EventScript_ChooseMudkip
+	}
+}
+
+text EverGrandeCity_Text_ChooseTreecko{
+	"TREECKO"
+}
+text EverGrandeCity_Text_ChooseTorchic{
+	"TORCHIC"
+}
+text EverGrandeCity_Text_ChooseMudkip{
+	"MUDKIP"
+}
+
+script EverGrandeCity_EventScript_ChooseTreecko{
+	givemon(SPECIES_TREECKO, 5, ITEM_NONE)
+	playfanfare(MUS_OBTAIN_ITEM)
+	msgbox("{PLAYER} received TREECKO from DAD!")
+	waitmessage
+	waitfanfare
+	msgbox(gText_NicknameThisPokemon, MSGBOX_YESNO)
+	call(Common_EventScript_GetGiftMonPartySlot)
+	call(Common_EventScript_NameReceivedPartyMon)
+	setvar(VAR_STARTER_MON, 0)
+	goto(EverGrandeCity_EventScript_BirchsBag_Take)
+}
+script EverGrandeCity_EventScript_ChooseTorchic{
+	givemon(SPECIES_TORCHIC, 5, ITEM_NONE)
+	playfanfare(MUS_OBTAIN_ITEM)
+	msgbox("{PLAYER} received TORCHIC from DAD!")
+	waitmessage
+	waitfanfare
+	msgbox(gText_NicknameThisPokemon, MSGBOX_YESNO)
+	call(Common_EventScript_GetGiftMonPartySlot)
+	call(Common_EventScript_NameReceivedPartyMon)
+	setvar(VAR_STARTER_MON, 1)
+	goto(EverGrandeCity_EventScript_BirchsBag_Take)
+}
+script EverGrandeCity_EventScript_ChooseMudkip{
+	givemon(SPECIES_MUDKIP, 5, ITEM_NONE)
+	playfanfare(MUS_OBTAIN_ITEM)
+	msgbox("{PLAYER} received MUDKIP from DAD!")
+	waitmessage
+	waitfanfare
+	msgbox(gText_NicknameThisPokemon, MSGBOX_YESNO)
+	call(Common_EventScript_GetGiftMonPartySlot)
+	call(Common_EventScript_NameReceivedPartyMon)
+	setvar(VAR_STARTER_MON, 2)
+	goto(EverGrandeCity_EventScript_BirchsBag_Take)
+}
+
+script EverGrandeCity_EventScript_BirchsBag_Take{
+	removeobject(1)
+	setflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+	release
+	end
+}
